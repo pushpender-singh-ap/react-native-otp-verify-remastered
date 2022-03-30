@@ -2,6 +2,7 @@
 
 Original Package [react-native-otp-verify](https://www.npmjs.com/package/react-native-otp-verify)
 
+Currently supported React Native version: `>= 0.62.0`
 
 # react-native-otp-verify-remastered
 The SMS Retriever API is used in Automatic SMS Verification.
@@ -47,6 +48,37 @@ startListeningForOtp = () =>
  componentWillUnmount() {
     RNOtpVerify.removeListener();
  }
+```
+
+### Example React Native App
+
+This project includes an example React Native app.
+You can run the apps by following these steps:
+
+1. Clone the repository
+
+```
+cd ~
+git clone git@github.com:pushpender-singh-ap/react-native-otp-verify-remastered.git
+```
+
+2. cd to `example`
+
+```
+cd react-native-otp-verify-remastered/example
+```
+
+3. Install dependencies
+
+```
+npm install
+```
+
+4. Run the apps:
+#### Run the Android app
+
+```
+react-native run-android
 ```
 
 #### Methods
