@@ -1,8 +1,20 @@
+# react-native-otp-verify-remastered
+
+[![Test](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/test.yml)
+[![publish](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/npm.yml/badge.svg?branch=deploy)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/npm.yml)
+[![GitHub license](https://img.shields.io/github/license/pushpender-singh-ap/react-native-otp-verify-remastered.svg)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/pushpender-singh-ap/react-native-otp-verify-remastered.svg)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/issues)
+[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/pulls)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/pushpender-singh-ap/react-native-otp-verify-remastered.svg)](https://GitHub.com/pushpender-singh-ap/react-native-otp-verify-remastered/pull/)
+[![GitHub contributors](https://img.shields.io/github/contributors/pushpender-singh-ap/react-native-otp-verify-remastered.svg)](https://GitHub.com/pushpender-singh-ap/react-native-otp-verify-remastered/graphs/contributors/)
+[![NPM Version](https://img.shields.io/npm/v/react-native-otp-verify-remastered.svg?style=flat)](https://www.npmjs.com/package/react-native-otp-verify-remastered)
+[![GitHub last commit](https://img.shields.io/github/last-commit/pushpender-singh-ap/react-native-otp-verify-remastered.svg?style=flat)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/commits)
+
 ## Due to the lack of response from the maintenance team, I am deploying my own package for my projects. If you'd like to use this package, feel free to do so.
 
 Original Package [react-native-otp-verify](https://www.npmjs.com/package/react-native-otp-verify)
 
-Currently supported React Native version: `>= 0.62.0`
+Currently supported React Native version: `>= 0.64.0`
 
 # react-native-otp-verify-remastered
 The SMS Retriever API is used in Automatic SMS Verification.
