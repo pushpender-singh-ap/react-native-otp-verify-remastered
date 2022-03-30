@@ -1,7 +1,7 @@
 # react-native-otp-verify-remastered
 
 [![Test](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/test.yml)
-[![publish](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/npm.yml/badge.svg?branch=deploy)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/npm.yml)
+[![publish](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/npm.yml/badge.svg?branch=deploy&event=push)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/npm.yml)
 [![GitHub license](https://img.shields.io/github/license/pushpender-singh-ap/react-native-otp-verify-remastered.svg)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/pushpender-singh-ap/react-native-otp-verify-remastered.svg)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/issues)
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/pulls)
