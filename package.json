@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/issues"
   },
-  "homepage": "https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered",
+  "homepage": "https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered#readme",
   "peerDependencies": {
     "react-native": "*"
   },
