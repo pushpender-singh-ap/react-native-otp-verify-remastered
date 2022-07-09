@@ -53,16 +53,22 @@ startListeningForOtp = () =>
     .then(p => RNOtpVerify.addListener(this.otpHandler))
     .catch(p => console.log(p));
 
- otpHandler = (message: string) => {
+otpHandler = (message: string) => {
         const otp = /(\d{4})/g.exec(message)[1];
         this.setState({ otp });
         RNOtpVerify.removeListener();
         Keyboard.dismiss();
 }
 
- componentWillUnmount() {
+getMobilehint = () => {
+    RNOtpVerify.requestHint()
+    .then((h) => console.log(h))
+    .catch((e) => console.log(e));
+}
+
+componentWillUnmount() {
     RNOtpVerify.removeListener();
- }
+}
 ```
 
 ### Example React Native App
@@ -112,6 +118,12 @@ Start listening for OTP/SMS. Return true if listener starts else throws error.
 
 Gets the hash code for the application which should be added at the end of message.
 This is just a one time process.
+
+---
+
+### `requestHint():Promise<string[]>`
+
+This method is part of sms retreiver api and its show available phone number list.
 
 ---
 ### `addListener(handler:(message:string)=>any):Promise<boolean>`

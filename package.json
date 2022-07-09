@@ -1,6 +1,6 @@
 {
   "name": "react-native-otp-verify-remastered",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Verify SMS messages natively through React-Native without requiring additional permissions.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,8 @@
     "SMS",
     "OTP",
     "Verification",
-    "Sms-retreiver"
+    "Sms-retreiver",
+    "remastered"
   ],
   "license": "MIT",
   "repository": {
