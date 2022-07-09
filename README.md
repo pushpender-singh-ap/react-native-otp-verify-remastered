@@ -40,6 +40,9 @@ yarn add react-native-otp-verify-remastered
 ```javascript
 import RNOtpVerify from 'react-native-otp-verify-remastered';
 
+
+// THIS PACKAGE ONLY FOR ANDROID
+
 getHash = () =>
     RNOtpVerify.getHash()
     .then(console.log)
