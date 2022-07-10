@@ -1,5 +1,5 @@
 {
-  "name": "react-native-otp-verify-remastered",
+  "name": "@pushpender-singh-ap/react-native-otp-verify-remastered",
   "version": "1.1.0",
   "description": "Verify SMS messages natively through React-Native without requiring additional permissions.",
   "main": "dist/index.js",
