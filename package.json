@@ -1,7 +1,8 @@
 {
   "name": "react-native-otp-verify-remastered",
   "version": "1.1.0",
-  "description": "Verify SMS messages natively through React-Native without requiring additional permissions.",
+  "description": "[DEPRECATED] This package is no longer maintained. Please use @pushpendersingh/react-native-otp-verify instead.",
+  "deprecated": "This package is deprecated. Please migrate to @pushpendersingh/react-native-otp-verify for React Native >= 0.76 with new architecture support, better APIs, and active maintenance.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

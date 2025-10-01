@@ -1,5 +1,83 @@
 # react-native-otp-verify-remastered
 
+> ## ⚠️ DEPRECATED - This package is no longer maintained
+> 
+> **This package has been deprecated and replaced with a new, modern implementation.**
+> 
+> ### 🚀 Migrate to the new package: [`@pushpendersingh/react-native-otp-verify`](https://www.npmjs.com/package/@pushpendersingh/react-native-otp-verify)
+> 
+> #### Why migrate?
+> 
+> - ✅ **Built with New Architecture**: Full support for React Native's new architecture (TurboModules)
+> - ✅ **Modern React Native**: Supports React Native >= 0.76
+> - ✅ **Better APIs**: Improved API design with TypeScript support
+> - ✅ **Two verification methods**: SMS Retriever API (automatic) + SMS User Consent API (with user approval)
+> - ✅ **Zero permissions**: No `READ_SMS` or `RECEIVE_SMS` required
+> - ✅ **Easy iOS handling**: Proper iOS platform exclusion with `react-native.config.js`
+> - ✅ **Active maintenance**: Regular updates and bug fixes
+> - ✅ **Better documentation**: Comprehensive guides and examples
+> 
+> #### 📦 Installation
+> 
+> ```sh
+> npm uninstall react-native-otp-verify-remastered
+> npm install @pushpendersingh/react-native-otp-verify
+> ```
+> 
+> #### 🔄 Quick Migration Guide
+> 
+> The new package has a cleaner, more intuitive API. Here's how to migrate:
+> 
+> **Old (react-native-otp-verify-remastered):**
+> ```javascript
+> import RNOtpVerify from 'react-native-otp-verify-remastered';
+> 
+> // Get hash
+> RNOtpVerify.getHash().then(console.log);
+> 
+> // Start listening
+> RNOtpVerify.getOtp()
+>   .then(() => RNOtpVerify.addListener(this.otpHandler))
+>   .catch(console.log);
+> 
+> otpHandler = (message) => {
+>   const otp = /(\d{4})/g.exec(message)[1];
+>   RNOtpVerify.removeListener();
+> }
+> ```
+> 
+> **New (@pushpendersingh/react-native-otp-verify):**
+> ```javascript
+> import {
+>   startSmsRetriever,
+>   addSmsListener,
+>   getAppSignature,
+>   extractOtp,
+> } from '@pushpendersingh/react-native-otp-verify';
+> 
+> // Get hash
+> const signature = await getAppSignature();
+> console.log(signature);
+> 
+> // Start listening
+> await startSmsRetriever();
+> const removeListener = addSmsListener((message) => {
+>   if (message.status === 'success' && message.message) {
+>     const otp = extractOtp(message.message);
+>     // Use OTP
+>   }
+> });
+> 
+> // Cleanup
+> removeListener();
+> ```
+> 
+> #### 📚 Full Documentation
+> 
+> Visit the new package for complete documentation: https://www.npmjs.com/package/@pushpendersingh/react-native-otp-verify
+> 
+> ---
+
 [![Test](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/test.yml)
 [![publish](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/npm.yml/badge.svg?branch=deploy&event=push)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/actions/workflows/npm.yml)
 [![GitHub license](https://img.shields.io/github/license/pushpender-singh-ap/react-native-otp-verify-remastered.svg)](https://github.com/pushpender-singh-ap/react-native-otp-verify-remastered/blob/main/LICENSE)
